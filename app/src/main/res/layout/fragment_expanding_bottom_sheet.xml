@@ -12,13 +12,13 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="@drawable/shape_sheet_background"
-            app:behavior_peekHeight="72dp"
+            app:behavior_peekHeight="56dp"
             app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/sheet_collapsed"
                 android:layout_width="wrap_content"
-                android:layout_height="72dp"
+                android:layout_height="56dp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent">
 
@@ -27,7 +27,9 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="16dp"
+                    android:src="@drawable/ic_photo_library"
                     app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@id/sheet_collapsed_count_text"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
@@ -37,17 +39,18 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="8dp"
                     android:layout_marginEnd="8dp"
-                    android:textColor="@color/colorPrimary"
+                    android:text="@string/dummy_items_count"
+                    android:textColor="#FFFFFF"
                     app:layout_constraintBottom_toBottomOf="@id/sheet_collapsed_icon"
-                    app:layout_constraintEnd_toStartOf="@id/sheet_collapsed_icon"
+                    app:layout_constraintEnd_toStartOf="@id/sheet_collapsed_image"
                     app:layout_constraintStart_toEndOf="@id/sheet_collapsed_icon"
                     app:layout_constraintTop_toTopOf="@id/sheet_collapsed_icon"
                     tools:text="10" />
 
                 <ImageView
                     android:id="@+id/sheet_collapsed_image"
-                    android:layout_width="56dp"
-                    android:layout_height="56dp"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
                     android:padding="8dp"
                     android:src="@color/colorPrimary"
                     app:layout_constraintBottom_toBottomOf="parent"
