@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">ExpandingBottomSheetSample</string>
     <string name="dummy_items_count">5</string>
+    <string name="dummy_contents">contents</string>
 </resources>
