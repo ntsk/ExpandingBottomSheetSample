@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.core.view.doOnLayout
 import androidx.fragment.app.Fragment
 import com.google.android.material.bottomsheet.BottomSheetBehavior
 import com.ntsk.expandingbottomsheetsample.databinding.FragmentExpandingBottomSheetBinding
@@ -15,7 +16,9 @@ class ExpandingBottomSheetFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         val binding = FragmentExpandingBottomSheetBinding.inflate(inflater, container, false)
-        initSheetBehavior(binding)
+        binding.sheetLayout.doOnLayout {
+            initSheetBehavior(binding)
+        }
         return binding.root
     }
 
