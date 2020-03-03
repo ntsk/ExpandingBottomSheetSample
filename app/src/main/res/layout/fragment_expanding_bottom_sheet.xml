@@ -11,7 +11,7 @@
             android:id="@+id/sheet_layout"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@color/colorAccent"
+            android:background="@drawable/shape_sheet_background"
             app:behavior_peekHeight="72dp"
             app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
 
